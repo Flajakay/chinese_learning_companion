@@ -1,21 +1,10 @@
-Aplikacja jest zaprojektowana jako narzędzie do nauki chińskiego z naciskiem na interaktywność i personalizację nauki dla każdego użytkownika.
+Uses Google Translate API for translations and Google TTS API for pronunciation.
 
-#API publiczne
+System for automatic loading/saving of data and separate caches for different data types.
 
-Wykorzystuje Google Translate API do tłumaczeń i Google TTS API do wymowy. 
+Four main views (ProfileSelection, Articles, Flashcards, Progress) with a sidebar for switching between pages.
 
-#Przechowywanie stanu
+Interactive features such as Chinese text segmentation, word click support, scroll position memory, audio playback, etc.
 
-System do automatycznego ładowania/zapisywania danych oraz osobne cache dla różnych typów danych.
+User profiles act as an authentication system—without a selected profile, there is no access to the main functions of the application. The login status is permanently stored.
 
-#Nawigacja
-
-Cztery główne widoki (ProfileSelection, Articles, Flashcards, Progress) z sidebar'em umożliwiającym przełączanie między stronami.
-
-#JavaScript kliencki
-
-Interaktywne funkcje jak segmentacja tekstu chińskiego, obsługa kliknięć w słowa, zapamiętywanie pozycji przewijania, odtwarzanie audio, itd.
-
-#System logowania
-
-Profile użytkowników działające jak system uwierzytelniania - bez wybranego profilu nie ma dostępu do głównych funkcji aplikacji. Stan logowania jest trwale przechowywany.
