@@ -1,0 +1,64 @@
+{
+  "name": "chinese-learning-companion",
+  "version": "1.0.0",
+  "engines": {
+    "node": "22.x"
+  },
+  "description": "A desktop application for learning Chinese",
+  "main": "src/main/index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "npm run build:renderer && electron-builder",
+    "build:renderer": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch",
+    "setup": "npm run build:renderer && npm start"
+  },
+  "keywords": [
+    "electron",
+    "chinese-learning",
+    "education",
+    "chinese"
+  ],
+  "author": "Chinese Learning Companion",
+  "license": "MIT",
+  "build": {
+    "appId": "com.chinesecompanion.app",
+    "productName": "Chinese Learning Companion",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/main/**/*",
+      "src/renderer/dist/**/*",
+      "src/shared/**/*",
+      "package.json",
+      "node_modules/**/*"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "electron": "^37.4.0",
+    "electron-builder": "^26.0.12",
+    "html-webpack-plugin": "^5.6.4",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@node-rs/jieba": "^1.6.0",
+    "@tailwindcss/postcss": "^4.1.12",
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "lucide-react": "^0.542.0",
+    "pinyin": "^4.0.0",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.12"
+  }
+}
